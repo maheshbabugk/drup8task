@@ -1,0 +1,10 @@
+drup8task.mypage:
+  path: '/nodecheck/{key}/{nid}'
+  defaults:
+    _controller: '\Drupal\drup8task\Controller\Drup8taskNodeCheck::nodecheck'
+  options:
+    parameters:
+      nid:
+        type: integer
+  requirements:
+    _permission: 'access content'
